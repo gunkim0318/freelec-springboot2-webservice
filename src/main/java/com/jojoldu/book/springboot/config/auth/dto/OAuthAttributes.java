@@ -4,10 +4,12 @@ import com.jojoldu.book.springboot.domain.user.Role;
 import com.jojoldu.book.springboot.domain.user.User;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.ToString;
 
 import java.util.Map;
 
 @Getter
+@ToString
 public class OAuthAttributes {
     private Map<String, Object> attributes;
     private String nameAttributeKey;
